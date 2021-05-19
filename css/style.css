@@ -46,3 +46,9 @@ body{
 .search-input{
     padding:10px 0;
 }
+
+/* Table */
+.table-data-head{
+    background-color: darkturquoise ;
+    color: black;
+}
