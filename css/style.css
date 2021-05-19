@@ -41,3 +41,8 @@ body{
 .global-card-header{
     font-weight: bold;
 }
+
+/* Search Input */
+.search-input{
+    padding:10px 0;
+}

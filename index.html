@@ -21,7 +21,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Paaji+2&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -50,51 +51,54 @@
                 </ul>
             </div>
         </nav>
-        
+
         <section id="global-stats">
-        <div class="row">
-            <div class="col-lg-4 global-card">
-                <div class="card shadow">
-                    <div class="card-header">
-                        <h3 class="global-card-header">Total Cases</h3><i class="fas fa-ambulance fa-2x"></i>
-                    </div>
-                    <div class="card-body">
-                        <h4><span id="tgcTemplate" style="color: blue;"></span></h4>
+            <div class="row">
+                <div class="col-lg-4 global-card">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h3 class="global-card-header">Total Cases</h3><i class="fas fa-ambulance fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4><span id="tgcTemplate" style="color: blue;"></span></h4>
 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 global-card">
+                    <div class="card shadow">
+                        <div class="card-header global-card-header">
+                            <h3 class="global-card-header">Total Recovered</h3><i class="fas fa-heart fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4><span id="totalRecoveredTemplate" style="color: green;"></span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 global-card">
+                    <div class="card shadow">
+                        <div class="card-header global-card-header">
+                            <h3 class="global-card-header">Total Deaths</h3><i
+                                class="fas fa-skull-crossbones fa-2x"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4><span id="totalDeathsTemplate" style="color: red;"></span></h4>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="col-lg-4 global-card">
-                <div class="card shadow">
-                    <div class="card-header global-card-header">
-                        <h3 class="global-card-header">Total Recovered</h3><i class="fas fa-heart fa-2x"></i>
-                    </div>
-                    <div class="card-body">
-                        <h4><span id="totalRecoveredTemplate" style="color: green;"></span></h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 global-card">
-                <div class="card shadow">
-                    <div class="card-header global-card-header">
-                        <h3 class="global-card-header">Total Deaths</h3><i class="fas fa-skull-crossbones fa-2x"></i>
-                    </div>
-                    <div class="card-body">
-                        <h4><span id="totalDeathsTemplate" style="color: red;"></span></h4>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="col-lg-4 col-md-6 search-input">
+                <input class="form-control input shadow" id="input" type="text" placeholder="Search Country...">
             </div>
         </div>
-    </section>
-        <div class="container">
-            <input class="form-control input-sm shadow" style="width: 25%; float: left;" id="input" type="text"
-                placeholder="Search..">
-        </div>
-        <div class="container">
-            <table class="table table-dark table-hover table-responsive shadow" border=1>
-                <thead class="thead-light sticky-top">
+        <div class="container  table-responsive">
+            <table class="table table-dark table-hover" border=1>
+                <thead class="thead-light">
                     <tr>
                         <th>Country</th>
                         <th>New Confirmed</th>
