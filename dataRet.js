@@ -26,15 +26,16 @@ getJSON(summaryUrl,  function(err, data) {
         console.error(err);
     } else {
 
-        console.log(data);
-
-        var totalGlobalConfirmed = data.Global.TotalConfirmed;
+        //console.log(data);
+        
+        //console.log(data.Global.TotalConfirmed.toLocaleString("en-US"));
+        var totalGlobalConfirmed = data.Global.TotalConfirmed.toLocaleString("en-IN");
         document.getElementById("tgcTemplate").innerHTML=totalGlobalConfirmed;
         
-        var totalGlobalDeath= data.Global.TotalDeaths;
+        var totalGlobalDeath= data.Global.TotalDeaths.toLocaleString("en-IN");
         document.getElementById("totalDeathsTemplate").innerHTML=totalGlobalDeath;     
 
-        var totalGlobalRecovered= data.Global.TotalRecovered;
+        var totalGlobalRecovered= data.Global.TotalRecovered.toLocaleString("en-IN");
         document.getElementById("totalRecoveredTemplate").innerHTML=totalGlobalRecovered;
 
         
