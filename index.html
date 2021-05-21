@@ -18,7 +18,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Paaji+2&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -29,7 +30,6 @@
 
 <body>
     <div class="container-fluid">
-
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">COVID-19 Tracker</a>
 
@@ -46,76 +46,95 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="sources.html">Sources</a>
+                        <a class="nav-link" href="sources.html">Useful Resouces</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <section id="global-stats">
-            <div class="row">
-                <div class="col-lg-4 global-card">
-                    <div class="card shadow">
-                        <div class="card-header">
-                            <h3 class="global-card-header">Total Cases</h3><i class="fas fa-ambulance fa-2x"></i>
+        <section id="main">
+            <section id="global-stats">
+                <div class="row">
+                    <div class="col-lg-4 global-card">
+                        <div class="card shadow">
+                            <div class="card-header">
+                                <h3 class="global-card-header">Total Cases</h3><i
+                                    class="fas fa-ambulance fa-2x icon-case"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4><span id="tgcTemplate"></span></h4>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h4><span id="tgcTemplate" style="color: blue;"></span></h4>
+                    </div>
 
+                    <div class="col-lg-4 global-card">
+                        <div class="card shadow">
+                            <div class="card-header global-card-header">
+                                <h3 class="global-card-header">Total Recovered</h3><i
+                                    class="fas fa-heart fa-2x icon-recover"></i>
+                            </div>
+                            <div class="card-body">
+                                <h4><span id="totalRecoveredTemplate""></span></h4>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 global-card">
-                    <div class="card shadow">
-                        <div class="card-header global-card-header">
-                            <h3 class="global-card-header">Total Recovered</h3><i class="fas fa-heart fa-2x"></i>
+                <div class=" col-lg-4 global-card">
+                                        <div class="card shadow">
+                                            <div class="card-header global-card-header">
+                                                <h3 class="global-card-header">Total Deaths</h3><i
+                                                    class="fas fa-skull-crossbones fa-2x icon-death"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4><span id="totalDeathsTemplate"></span></h4>
+                                            </div>
+                                        </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <h4><span id="totalRecoveredTemplate" style="color: green;"></span></h4>
-                        </div>
-                    </div>
-                </div>
+            </section>
 
-                <div class="col-lg-4 global-card">
-                    <div class="card shadow">
-                        <div class="card-header global-card-header">
-                            <h3 class="global-card-header">Total Deaths</h3><i
-                                class="fas fa-skull-crossbones fa-2x"></i>
+            <div class="container">
+                <div class="col-lg-4 col-md-6 search-input ml-auto">
+                    <input class="form-control input shadow" id="input" type="text" placeholder="Search Country...">
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-dark table-hover table-striped" border=1>
+                        <div class="fixed-head">
+                            <thead class="table-data-head align-middle">
+                                <tr>
+                                    <th class="table-head-content">Country</th>
+                                    <th>New Confirmed</th>
+                                    <th>New Deaths</th>
+                                    <th>New Recovered</th>
+                                    <th>Total Confirmed</th>
+                                    <th>Total Deaths</th>
+                                    <th>Total Recovered</th>
+                                </tr>
+                            </thead>
                         </div>
-                        <div class="card-body">
-                            <h4><span id="totalDeathsTemplate" style="color: red;"></span></h4>
-                        </div>
-                    </div>
+                        <tbody id="tableTemplate">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
-
-        <div class="container">
-            <div class="col-lg-4 col-md-6 search-input ml-auto">
-                <input class="form-control input shadow" id="input" type="text" placeholder="Search Country...">
-            </div>
-            <div class="table-responsive">
-                <table class="table table-bordered table-dark table-hover table-striped" border=1>
-                    <div class="fixed-head">
-                        <thead class="table-data-head">
-                            <tr>
-                                <th class="table-head-content">Country</th>
-                                <th>New Confirmed</th>
-                                <th>New Deaths</th>
-                                <th>New Recovered</th>
-                                <th>Total Confirmed</th>
-                                <th>Total Deaths</th>
-                                <th>Total Recovered</th>
-                            </tr>
-                        </thead>
-                    </div>
-                    <tbody id="tableTemplate">
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
+    <section id="footer">
+        <footer>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 footer-column">
+                    <a class="footer-link" target="blank" href="https://www.instagram.com/verma_mohit605">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a class="footer-link" target="blank" href="https://www.twitter.com/mo_E_to">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a class="footer-link" target="blank" href="https://www.facebook.com/mohitverma605">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
     <script type="text/javascript" src="dataRet.js"></script>
 
     <script>

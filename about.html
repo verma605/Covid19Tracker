@@ -19,52 +19,105 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="css/style.css">
   <title>About</title>
 </head>
 
 <body>
-  
-
   <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="index.html">COVID-19 Tracker</a>
+    <section id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <a class="navbar-brand" href="index.html">COVID-19 Tracker</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
           <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link active" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="sources.html">Sources</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sources.html">Useful Resouces</a>
+            </li>
           </ul>
+        </div>
+
+      </nav>
+    </section>
+
+    <section id="main">
+      <div class="container">
+
+        <div class="row justify-content-center about-container">
+          <div class="col-lg-8">
+            <div class="question">
+              <h3>What hosting service is used?</h3>
+            </div>
+            <div class="answer">
+              <h5>The site is hosted on
+                <a target="_blank" href="https://www.freewebhostingarea.com/">Free Web Hosting
+                  Area <i class="fas fa-external-link-alt"></i>
+                </a>
+              </h5>
+            </div>
+            <div class="question">
+              <h3>What is the source of data?</h3>
+            </div>
+            <div class="answer">
+              <h5>The data is retrieved from
+                <a target="_blank" href="https://www.covid19api.com/">COVID-19 API <i
+                    class="fas fa-external-link-alt"></i>
+                </a>
+              </h5>
+            </div>
+            <div class="question">
+              <h3>Why there is a difference in numbers compared to other sites?</h3>
+            </div>
+            <div class="answer">
+              <h5>Data is sourced from various websites by API maker.</h5>
+            </div>
+            <div class="question">
+              <h3>How could I contact developer?</h3>
+            </div>
+            <div class="answer">
+              <h5>You can contact me from social media profile mentioned in footer.</h5>
+            </div>
+          </div>
+        </div>
+
       </div>
-  </nav>  
-
-    <p>Hello guys,</p>
-    <p>Just made this site because I was getting bored during the lockdown</p>
-    <p>If you find some bugs or have some suggestions for improvement, don't forget to contact me on below given links.
-    </p>
-    <h4>Social Media
-      <a target="blank" href="https://www.instagram.com/verma_mohit605"><img
-          src="https://img.icons8.com/nolan/64/instagram-new.png" /></a>
-      <a target="blank" href="https://www.twitter.com/mo_E_to"><img
-          src="https://img.icons8.com/nolan/64/twitter.png" /></a>
-      <a target="blank" href="https://www.facebook.com/mohitverma605"><img
-          src="https://img.icons8.com/nolan/64/facebook-new.png" /></a>
-    </h4>
+    </section>
   </div>
-
+  <section id="footer">
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 footer-column">
+          <a class="footer-link" target="blank" href="https://www.instagram.com/verma_mohit605">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+          <a class="footer-link" target="blank" href="https://www.twitter.com/mo_E_to">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a class="footer-link" target="blank" href="https://www.facebook.com/mohitverma605">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </section>
 </body>
 
 </html>

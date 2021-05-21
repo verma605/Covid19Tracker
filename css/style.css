@@ -6,12 +6,20 @@
 
 body{
     background-color:darkslategray;
+    overflow-y: scroll;
+    padding-bottom: 70px;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
+#main{
+    background-color: rgb(36, 61, 61);
+    padding: 3%;
+    min-height: 80vh;
+}
 /* Navigation Bar */
 
 .navbar{
-    padding:5% 10%;
+    padding:2% 10%;
 }
 
 .nav-item{
@@ -42,6 +50,30 @@ body{
     font-weight: bold;
 }
 
+.card-header{
+    background-color:darkcyan;
+}
+
+.card-body{
+    background-color:lightseagreen;
+    color: blanchedalmond;
+}
+
+.card-body h4{
+    font-weight: bold;
+}
+
+.icon-case{
+    color: dodgerblue;
+}
+
+.icon-recover{
+    color:limegreen;
+}
+.icon-death{
+    color:firebrick;
+}
+
 /* Search Input */
 .search-input{
     padding:10px 0;
@@ -63,10 +95,88 @@ body{
     color: black;
 }
 
+.table thead th{
+    vertical-align:middle;
+}
+
 th {
-    background-color: darkturquoise ;
+    background-color: darkcyan ;
     position: sticky;
     top: 0; /* Don't forget this, required for the stickiness */
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
 
   }
+.table-resources td{
+    border-top: 0;
+    text-align: left;
+    color: dodgerblue;
+}
+
+.table-resources td a{
+    color: lightblue;
+    text-decoration: none;
+}
+
+.table-resources td a:hover{
+    color: lightcoral;
+}
+  /* About */
+
+  .about-container{ 
+      padding-top: 1%;
+      font-family: 'Ubuntu Mono', monospace;
+  }
+
+  .about-container .question{
+      color: darkseagreen;
+      padding: 0 0 1% 0;
+  }
+
+  .about-container .answer{
+    padding: 0  0   5% 0;
+    color: skyblue;
+  }
+
+  .about-container .answer a{
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  .about-container .answer a:hover{
+    color: lightcoral;
+  }
+
+  /* Footer */
+footer{
+    padding: 1% 1%;
+    background-color:darkslategray;
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+ #footer a{
+     color: gainsboro;
+ }
+
+ #footer a:hover{
+     color: lightcoral;
+ }
+.footer-column a{
+    text-align: center;
+    color:gainsboro;
+}
+
+.footer-link{
+    padding:1% 2%;
+    text-decoration: none;
+}
+
+.footer-link :hover{
+    color: lightcoral;
+}
